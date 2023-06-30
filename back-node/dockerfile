@@ -1,0 +1,8 @@
+# Dockerfile para el servicio "db"
+FROM mysql:8.0
+ENV MYSQL_ROOT_PASSWORD=root
+EXPOSE 3306
+
+# Dockerfile para el servicio "adminer"
+FROM adminer
+EXPOSE 8080
